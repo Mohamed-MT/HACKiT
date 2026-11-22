@@ -153,3 +153,13 @@ GitHub Actions runs these checks on pushes and pull requests.
 ## License
 
 HACKiT is released under the MIT License. See [LICENSE](LICENSE).
+
+---
+
+HACKiT – Additional Disclaimer
+
+HACKiT is intended for educational purposes and authorized cybersecurity testing only. Users are responsible for obtaining proper authorization before using HACKiT or any commands and techniques it recommends.
+
+The developer does not endorse or encourage unauthorized access, malicious activity, or unlawful use of this software.
+
+Users assume responsibility for how they use the software and for any consequences arising from its use or misuse.
