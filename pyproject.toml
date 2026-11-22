@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hackit"
+version = "0.1.0"
+description = "AI-powered penetration testing assistant for Kali Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "HACKiT Project" }]
+keywords = ["kali-linux", "pentest", "security", "cli", "cybersecurity", "ai-assistant"]
+classifiers = [
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "Topic :: Security",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "rich>=13.7.0,<15",
+    "typer>=0.12.0,<1",
+    "prompt_toolkit>=3.0.43,<4",
+    "anthropic>=0.34.0,<1",
+]
+
+[project.optional-dependencies]
+gui = ["PyQt6>=6.6.0,<7"]
+dev = ["pytest>=8.0.0,<9", "bandit>=1.7.8,<2", "pip-audit>=2.7.0,<3"]
+
+[project.scripts]
+hackit = "hackit.cli:app"
+
+[tool.setuptools.packages.find]
+include = ["hackit*"]
+
+[tool.setuptools.package-data]
+hackit = ["gui/*.qss"]

@@ -1,0 +1,188 @@
+/* HACKiT — dark cyberpunk glassmorphism theme */
+
+* {
+    font-family: "Inter", "Segoe UI", "Ubuntu", sans-serif;
+    color: #d8e4f0;
+    outline: none;
+}
+
+QMainWindow, #centralWidget {
+    background-color: #0a0e17;
+}
+
+/* Subtle gradient-glass panels */
+QFrame#panel, QListWidget, QTableWidget, QTextBrowser, QLineEdit, QComboBox {
+    background-color: rgba(18, 24, 38, 0.72);
+    border: 1px solid rgba(0, 240, 255, 0.18);
+    border-radius: 10px;
+}
+
+QFrame#headerBar {
+    background-color: rgba(14, 18, 30, 0.85);
+    border: none;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.25);
+}
+
+#appTitle {
+    color: #00f0ff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+#appSubtitle {
+    color: #7d8fa8;
+    font-size: 11px;
+}
+
+QLabel.sectionLabel {
+    color: #ff2bd6;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 2px;
+}
+
+QListWidget {
+    padding: 6px;
+}
+
+QListWidget::item {
+    padding: 8px 10px;
+    border-radius: 8px;
+    margin: 2px 0;
+}
+
+QListWidget::item:selected {
+    background-color: rgba(0, 240, 255, 0.14);
+    border: 1px solid rgba(0, 240, 255, 0.45);
+    color: #00f0ff;
+}
+
+QListWidget::item:hover:!selected {
+    background-color: rgba(255, 43, 214, 0.08);
+}
+
+QTableWidget {
+    gridline-color: rgba(0, 240, 255, 0.08);
+    selection-background-color: rgba(0, 240, 255, 0.16);
+    selection-color: #00f0ff;
+    alternate-background-color: rgba(255, 255, 255, 0.015);
+}
+
+QHeaderView::section {
+    background-color: rgba(10, 14, 23, 0.9);
+    color: #7d8fa8;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 240, 255, 0.2);
+}
+
+QLineEdit {
+    padding: 10px 14px;
+    font-size: 13px;
+    selection-background-color: rgba(0, 240, 255, 0.3);
+}
+
+QLineEdit:focus {
+    border: 1px solid rgba(0, 240, 255, 0.6);
+}
+
+QPushButton {
+    background-color: rgba(0, 240, 255, 0.10);
+    border: 1px solid rgba(0, 240, 255, 0.45);
+    border-radius: 8px;
+    padding: 9px 18px;
+    font-weight: 600;
+    color: #00f0ff;
+}
+
+QPushButton:hover {
+    background-color: rgba(0, 240, 255, 0.20);
+}
+
+QPushButton:pressed {
+    background-color: rgba(0, 240, 255, 0.32);
+}
+
+QPushButton#dangerButton {
+    background-color: rgba(255, 60, 90, 0.10);
+    border: 1px solid rgba(255, 60, 90, 0.55);
+    color: #ff5c7a;
+}
+
+QPushButton#dangerButton:hover {
+    background-color: rgba(255, 60, 90, 0.22);
+}
+
+QPushButton:disabled {
+    color: #45526b;
+    border-color: rgba(125, 143, 168, 0.2);
+    background-color: rgba(125, 143, 168, 0.06);
+}
+
+QTextBrowser {
+    padding: 14px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+QTextEdit#commandLog {
+    background-color: rgba(6, 9, 15, 0.92);
+    border: 1px solid rgba(0, 240, 255, 0.15);
+    border-radius: 10px;
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+    font-size: 12px;
+    color: #7effc0;
+    padding: 10px;
+}
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+}
+
+QScrollBar::handle:vertical {
+    background: rgba(0, 240, 255, 0.25);
+    border-radius: 5px;
+    min-height: 24px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: rgba(0, 240, 255, 0.45);
+}
+
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+    height: 0;
+}
+
+QComboBox {
+    padding: 8px 12px;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+QLabel#riskBadgePassive { color: #39f58a; font-weight: 700; }
+QLabel#riskBadgeLow { color: #39d6f5; font-weight: 700; }
+QLabel#riskBadgeMedium { color: #f5c542; font-weight: 700; }
+QLabel#riskBadgeHigh { color: #ff5c7a; font-weight: 700; }
+
+QDialog {
+    background-color: #0e1220;
+}
+
+QCheckBox {
+    spacing: 8px;
+}
+
+QStatusBar {
+    background-color: rgba(10, 14, 23, 0.9);
+    color: #7d8fa8;
+    border-top: 1px solid rgba(0, 240, 255, 0.15);
+}
