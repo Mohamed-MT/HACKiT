@@ -28,7 +28,7 @@ jobs:
           cache: pip
 
       - name: Update packaging and audit dependencies
-        run: python -m pip install --upgrade pip setuptools filelock
+        run: python -m pip install --upgrade pip setuptools
 
       - name: Install project and development tools
         run: python -m pip install -e ".[dev]"
@@ -40,4 +40,5 @@ jobs:
         run: bandit -r hackit/
 
       - name: Audit dependencies
+        if: matrix.python-version == '3.12'
         run: pip-audit --skip-editable
