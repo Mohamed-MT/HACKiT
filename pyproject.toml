@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68.0", "wheel"]
+requires = ["setuptools>=84.1.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -27,7 +27,7 @@ dependencies = [
 
 [project.optional-dependencies]
 gui = ["PyQt6>=6.6.0,<7"]
-dev = ["pytest>=8.0.0,<9", "bandit>=1.7.8,<2", "pip-audit>=2.7.0,<3"]
+dev = ["pytest>=9.0.3,<10", "bandit>=1.7.8,<2", "pip-audit>=2.7.0,<3", "filelock>=4.2.1"]
 
 [project.scripts]
 hackit = "hackit.cli:app"
